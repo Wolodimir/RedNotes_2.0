@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/main.css">
+    <title>RedNotes</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header-logo"><h1>RedNotes</h1></div>
+            <div class="header-menu_bt menu_bar"><span id="menu_bt">☰</span></div>
+        </header>
+        <main class="main">
+            <!-- create -->
+            <div class="container create">
+                <form th:action="@{'/rednotes'+'/notes'+'/createNote'}" class="form-create" method="post">
+                    <input name="heading" type="text" placeholder="Введите заголовок" spellcheck="true">
+                    <textarea name="text" id="text" placeholder="Введите текст" spellcheck="true"></textarea>
+                    <div class="form-create_button-box">
+                        <div class="form-create_button-box-button"><label id="pub_l" for="pub"><input name="available" id="pub" type="checkbox"><span id="switch">⚑</span></label></div>
+                        <input type="hidden" name="available" value="0">
+                        <div id="del" class="form-create_button-box-button">✖</div>
+                        <button class="form-create_button-box-button" type="submit">➤</button>
+                    </div>
+                </form>
+            </div>
+            <!-- line -->
+            <div class="container line">
+               <div class="line-button-box">
+                    <div class="line-button-box_button line_bt pers">⚑</div>
+                    <div class="line-button-box_button line_bt glob">☁</div>
+               </div>
+               <div class="line-panel">
+                    <span>Личных:<span id="counter_pers" class="counter">#</span></span>
+                    <span>Общих:<span id="counter_glob" class="counter">#</span></span>
+               </div>
+               <!-- line_personal -->
+                <div class="line-note-box personal">
+                    <!-- search_notes -->
+                    <form action="" >
+                        <input type="search" placeholder="Поиск">
+                        <button class="search_bt"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                            viewBox="0 0 50 50"><path d="M 21 3 C 11.6 3 4 10.6 4 20 C 4 29.4 11.6 37 21 37 C 24.354553 37 27.47104 36.01984 30.103516 34.347656 L 42.378906 46.621094 L 46.621094 42.378906 L 34.523438 30.279297 C 36.695733 27.423994 38 23.870646 38 20 C 38 10.6 30.4 3 21 3 z M 21 7 C 28.2 7 34 12.8 34 20 C 34 27.2 28.2 33 21 33 C 13.8 33 8 27.2 8 20 C 8 12.8 13.8 7 21 7 z"></path></svg></button>
+                    </form>
+                    <!-- note -->
+                    <div class="line-note-box_note pers_note" th:each="el : ${persNotes}">
+                        <h1 class="title" th:text="${el.heading}">Заголовок Личный</h1>
+                        <p class="text" th:text="${el.text}">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis est in ullam qui at dicta repellendus, consequuntur ipsa accusamus eos enim dolor voluptatem quidem sit autem odio, facilis ipsam veritatis pariatur vel voluptas. Officiis tenetur harum, voluptatem ducimus nam accusantium, culpa earum molestiae non vitae quae minus. Itaque laudantium, expedita illo facilis vero quia nesciunt esse nulla voluptatem nostrum necessitatibus. Excepturi laudantium tempore deserunt repudiandae. Quae esse recusandae temporibus earum consequatur consequuntur expedita. Ipsa error architecto, iste quos voluptas nobis iure laudantium laboriosam eveniet. Ipsa officiis veritatis vero natus minima suscipit blanditiis unde omnis, dolorem voluptatibus dolores assumenda quos inventore.</p>
+                        <h2 class="user" th:text="${el.authorName}">User</h2>
+                        <div class="edit_bt"><svg xmlns="http://www.w3.org/2000/svg"    class="bi bi-pencil" viewBox="0 0 16 16">
+                            <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5L13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175l-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/>
+                        </svg></div>
+                    </div>
+                </div>
+                <!-- line_global -->
+                <div class="line-note-box global">
+                    <!-- search_notes -->
+                    <form action="" >
+                        <input type="search" placeholder="Поиск">
+                        <button class="search_bt"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                            viewBox="0 0 50 50"><path d="M 21 3 C 11.6 3 4 10.6 4 20 C 4 29.4 11.6 37 21 37 C 24.354553 37 27.47104 36.01984 30.103516 34.347656 L 42.378906 46.621094 L 46.621094 42.378906 L 34.523438 30.279297 C 36.695733 27.423994 38 23.870646 38 20 C 38 10.6 30.4 3 21 3 z M 21 7 C 28.2 7 34 12.8 34 20 C 34 27.2 28.2 33 21 33 C 13.8 33 8 27.2 8 20 C 8 12.8 13.8 7 21 7 z"></path></svg></button>
+                    </form>
+                    <!-- note -->
+                    <div class="line-note-box_note global_note" th:each="${}">
+                        <h1 class="title">Заголовок Общий</h1>
+                        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis est in ullam qui at dicta repellendus, consequuntur ipsa accusamus eos enim dolor voluptatem quidem sit autem odio, facilis ipsam veritatis pariatur vel voluptas. Officiis tenetur harum, voluptatem ducimus nam accusantium, culpa earum molestiae non vitae quae minus. Itaque laudantium, expedita illo facilis vero quia nesciunt esse nulla voluptatem nostrum necessitatibus. Excepturi laudantium tempore deserunt repudiandae. Quae esse recusandae temporibus earum consequatur consequuntur expedita. Ipsa error architecto, iste quos voluptas nobis iure laudantium laboriosam eveniet. Ipsa officiis veritatis vero natus minima suscipit blanditiis unde omnis, dolorem voluptatibus dolores assumenda quos inventore.</p>
+                        <h2 class="user">User</h2>
+                        <div class="edit_bt"><svg xmlns="http://www.w3.org/2000/svg" class="bi bi-pencil" viewBox="0 0 16 16">
+                            <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5L13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175l-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/>
+                        </svg></div>
+                    </div>
+                </div>
+                <!-- form-edit -->
+                <form action="" class="form_edit">
+                    <input type="text">
+                    <textarea name="" id=""></textarea>
+                    <div class="form-button-box">
+                        <a onsubmit="return false" class="edit_delete" href=""><svg xmlns="http://www.w3.org/2000/svg" class="bi bi-trash-fill" viewBox="0 0 16 16">
+                            <path d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0z"/>
+                        </svg></a>
+                        <button onsubmit="return false">➤</button>
+                    </div>
+                </form>
+            </div>
+            <!-- account -->
+            <div class="container acc">
+                <div class="user-info">
+                    <div class="user_img"></div>
+                    <h1>user_name</h1>
+                </div>
+                <form action=""><button>Выйти</button></form>
+            </div>
+            <!-- settings -->
+            <div class="container set">
+                <div class="set-box">
+                    <span id="theme">Light Theme</span>
+                    <div class="toggle_switch">
+                        <input id="dark" type="checkbox"><label class="dark" for="dark"></label>
+                    </div>
+                </div>
+            </div>
+            <!-- reference -->
+            <div class="container ref">
+                <div class="text-box one">
+                    <span>История версий</span>
+                </div>
+                <div class="text-box">
+                    <span class="vers">Версия:<span>v2.0</span></span>
+                    <span class="point">- создание записей</span>
+                    <span class="point">- редактирование записей</span>
+                    <span class="point">- тёмная тема</span>
+                </div>
+            </div>
+            <!-- developers -->
+            <div class="container dev">
+                <div class="dev-box">
+                    <h1>Frontend</h1>
+                    <div class="img" id='front'></div>
+                    <h2>Neon_Samurai</h2>
+                    <a href="https://vk.com/vald_luv" target="_blank">- Вконтакте -</a>
+                    <a href="https://github.com/samurai-2000" target="_blank">- GitHub -</a>
+                </div>
+                <div class="dev-box">
+                    <h1>Backend</h1>
+                    <div class="img" id="back"></div>
+                    <h2>Wolodimir</h2>
+                    <a href="https://vk.com/id169768457" target="_blank">- Вконтакте -</a>
+                    <a href="https://github.com/Wolodimir" target="_blank">- GitHub -</a>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+
+        </footer>
+        <!-- app -->
+        <div class="app">
+            <span class="app-span create">Создать</span>
+            <span class="app-span line">Лента</span>
+            <span class="app-span acc">Аккаунт</span>
+            <span class="app-span set">Настройки</span>
+            <span class="app-span ref">Справка</span>
+            <span class="app-span dev">Разработчики</span>
+        </div>
+    </div>
+    <!-- js -->
+    <script
+        src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+        crossorigin="anonymous"></script>
+    <script src="/js/main.js"></script>
+</body>
+</html>

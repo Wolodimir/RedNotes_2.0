@@ -1,0 +1,1132 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+}
+
+html h1, html h2, html h3, html h4, html h5, body h1, body h2, body h3, body h4, body h5 {
+  margin: 0;
+}
+
+html p, html span, body p, body span {
+  margin: 0;
+}
+
+.body_dark {
+  background: #636e72 !important;
+  color: white !important;
+}
+
+.header_logo_dark {
+  background: #2d3436 !important;
+}
+
+.container_dark {
+  background: #2d3436 !important;
+}
+
+.create_dark textarea, .create_dark input {
+  background: #2d3436 !important;
+  color: white !important;
+}
+
+.create_dark input::-webkit-input-placeholder, .create_dark textarea::-webkit-input-placeholder {
+  color: white !important;
+}
+
+.create_dark input:-ms-input-placeholder, .create_dark textarea:-ms-input-placeholder {
+  color: white !important;
+}
+
+.create_dark input::-ms-input-placeholder, .create_dark textarea::-ms-input-placeholder {
+  color: white !important;
+}
+
+.create_dark input::placeholder, .create_dark textarea::placeholder {
+  color: white !important;
+}
+
+.create_dark input:focus::-webkit-input-placeholder, .create_dark textarea:focus::-webkit-input-placeholder {
+  color: transparent !important;
+}
+
+.create_dark input:focus:-ms-input-placeholder, .create_dark textarea:focus:-ms-input-placeholder {
+  color: transparent !important;
+}
+
+.create_dark input:focus::-ms-input-placeholder, .create_dark textarea:focus::-ms-input-placeholder {
+  color: transparent !important;
+}
+
+.create_dark input:focus::placeholder, .create_dark textarea:focus::placeholder {
+  color: transparent !important;
+}
+
+.create_dark .form-create_button-box-button {
+  color: white !important;
+  background: #636e72 !important;
+  border: 1px solid white !important;
+}
+
+.line_dark input[type="search"] {
+  background: #2d3436 !important;
+  color: white !important;
+}
+
+.line_dark input[type="search"]:focus {
+  border: 1px solid white !important;
+  border-right: 0px !important;
+}
+
+.line_dark input[type="search"]:focus + button {
+  border: 1px solid white !important;
+}
+
+.line_dark input[type="search"]::-webkit-input-placeholder {
+  color: white !important;
+}
+
+.line_dark input[type="search"]:-ms-input-placeholder {
+  color: white !important;
+}
+
+.line_dark input[type="search"]::-ms-input-placeholder {
+  color: white !important;
+}
+
+.line_dark input[type="search"]::placeholder {
+  color: white !important;
+}
+
+.line_dark input[type="search"]:focus::-webkit-input-placeholder {
+  color: transparent !important;
+}
+
+.line_dark input[type="search"]:focus:-ms-input-placeholder {
+  color: transparent !important;
+}
+
+.line_dark input[type="search"]:focus::-ms-input-placeholder {
+  color: transparent !important;
+}
+
+.line_dark input[type="search"]:focus::placeholder {
+  color: transparent !important;
+}
+
+.line_dark .search_bt {
+  background: #2d3436 !important;
+}
+
+.line_dark .search_bt svg {
+  fill: white !important;
+}
+
+.line_dark .line-note-box_note {
+  border-top: 1px solid white !important;
+  border-bottom: 1px solid white !important;
+}
+
+.line_dark .edit_bt {
+  border: 1px solid white !important;
+}
+
+.line_dark .edit_bt > svg {
+  fill: white !important;
+}
+
+.line_dark .form_edit {
+  background: #2d3436 !important;
+}
+
+.line_dark .form_edit input, .line_dark .form_edit textarea {
+  background: #2d3436 !important;
+  color: white !important;
+}
+
+.line_dark .form_edit a, .line_dark .form_edit button {
+  border: 1px solid white !important;
+  color: white !important;
+}
+
+.line_dark .form_edit a svg, .line_dark .form_edit button svg {
+  fill: white !important;
+}
+
+.acc_dark button {
+  background: #2d3436 !important;
+  color: white !important;
+}
+
+.set_dark .set-box {
+  border-top: 1px solid white !important;
+}
+
+.set_dark .toggle_switch {
+  background: white !important;
+}
+
+.ref_dark {
+  color: white;
+}
+
+.ref_dark .text-box {
+  border-bottom: 1px solid white !important;
+}
+
+.dev_dark .div-box {
+  color: white !important;
+}
+
+.dev_dark .img {
+  border: 4px solid white !important;
+}
+
+.app_dark {
+  background: #2d3436 !important;
+}
+
+@media all and (min-width: 375px) {
+  .acc .user_img {
+    width: 150px !important;
+    height: 150px !important;
+  }
+  .dev .img {
+    width: 150px !important;
+    height: 150px !important;
+  }
+}
+
+@media all and (min-width: 768px) {
+  .header .header-logo h1 {
+    font-size: 1.3rem !important;
+  }
+  .header span {
+    font-size: 1.3rem !important;
+  }
+  .create .form-create_button-box-button {
+    width: 60px !important;
+    height: 60px !important;
+    font-size: 1.2rem !important;
+  }
+  .create .form-create input {
+    font-size: 1.3rem !important;
+  }
+  .create .form-create textarea {
+    font-size: 1rem !important;
+  }
+  .line .line-button-box_button {
+    font-size: 1.5rem !important;
+  }
+  .line .line-panel span {
+    font-size: 0.8rem !important;
+  }
+  .line .line-note-box_note .title {
+    font-size: 1.8rem !important;
+    margin-bottom: 1rem !important;
+  }
+  .line .line-note-box_note .text {
+    font-size: 1.1rem !important;
+  }
+  .line .line-note-box_note .user {
+    font-size: 1.3rem !important;
+    margin: 1rem !important;
+  }
+  .acc .user_img {
+    width: 150px !important;
+    height: 150px !important;
+  }
+  .acc button {
+    font-size: 1.3rem !important;
+  }
+  .acc h1 {
+    font-size: 2.3rem !important;
+  }
+  .set .toggle_switch {
+    width: 35px !important;
+    height: 15px !important;
+  }
+  .set .toggle_switch label {
+    width: 20px !important;
+    height: 20px !important;
+  }
+  .set .toggle_switch label:hover {
+    -webkit-box-shadow: 0 0 0px 13px rgba(87, 239, 196, 0.8) !important;
+            box-shadow: 0 0 0px 13px rgba(87, 239, 196, 0.8) !important;
+    cursor: pointer;
+  }
+  .set span {
+    font-size: 1.3rem;
+  }
+  .ref span {
+    font-size: 1.3rem;
+  }
+  .ref span[class=vers] > span {
+    font-size: 1.3rem !important;
+  }
+  .ref span[class=point] {
+    font-size: 1.1rem !important;
+    color: #d63031;
+  }
+  .dev .img {
+    width: 200px !important;
+    height: 200px !important;
+  }
+  .dev a {
+    font-size: 1.3rem !important;
+  }
+  .dev h1 {
+    font-size: 2.3rem;
+  }
+  .dev h2 {
+    font-size: 1.7rem;
+  }
+  .app span {
+    font-size: 1.3rem;
+  }
+  .form_edit input {
+    font-size: 1.3rem !important;
+  }
+  .form_edit textarea {
+    font-size: 1rem !important;
+  }
+  .form_edit button {
+    font-size: 1.2rem !important;
+  }
+  .form_edit a, .form_edit button {
+    width: 60px !important;
+    height: 60px !important;
+  }
+  .form_edit a svg {
+    width: 20px !important;
+    height: 20px !important;
+  }
+}
+
+@media all and (min-width: 1024px) {
+  ::-webkit-scrollbar {
+    background: transparent;
+    width: 5px;
+    position: absolute !important;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgba(87, 239, 196, 0.8);
+    border-radius: 1rem;
+    position: absolute !important;
+  }
+}
+
+.header-logo, .header-menu_bt, .header-menu_bt span, .main, .main .create .form-create_button-box-button, .main .create .form-create_button-box-button label, .main .line .line-button-box_button, .main .line .line-note-box form, .main .line .line-note-box .search_bt, .main .line .line-note-box_note .user, .main .line .line-note-box_note .edit_bt, .main .line .form_edit a, .main .line .form_edit button, .main .acc form, .app {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header, .main .create .form-create, .main .acc, .main .acc .user-info, .main .set .set-box, .main .ref .text-box, .main .dev .dev-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body {
+  background: #dfe6e9;
+  color: #2d3436;
+  padding: 0.5rem;
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+body ::-moz-selection {
+  background: #d63031;
+  color: white;
+}
+
+body ::selection {
+  background: #d63031;
+  color: white;
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.header {
+  position: relative;
+  width: 100%;
+  height: 15%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  z-index: 2;
+}
+
+.header-logo {
+  width: 100%;
+  height: 50%;
+  background: white;
+}
+
+.header-logo h1 {
+  font-size: 1rem;
+}
+
+.header-logo h1:first-letter {
+  color: #d63031;
+}
+
+.header-menu_bt {
+  width: 100%;
+  height: 50%;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.header-menu_bt span {
+  font-size: 1rem;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.header-menu_bt span:hover {
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.header-menu_bt span:active {
+  color: #2d3436;
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+  background: rgba(87, 239, 196, 0.8);
+}
+
+.header-menu_bt .bt_active {
+  color: white;
+}
+
+.header .menu_active {
+  background: #d63031;
+}
+
+.main {
+  background: white;
+  width: 100%;
+  height: 80%;
+}
+
+.main .container {
+  width: 100%;
+  max-width: 1280px;
+  height: 100%;
+  padding: 0.5rem;
+  background: white;
+}
+
+.main .create .form-create {
+  width: 100%;
+  height: 100%;
+}
+
+.main .create .form-create input[type=checkbox] {
+  display: none;
+}
+
+.main .create .form-create input[type=text] {
+  width: 100%;
+  height: 10%;
+  border: none;
+  outline: none;
+  padding: 0;
+  font-weight: bold;
+  font-family: 'Montserrat Alternates', sans-serif;
+  caret-color: #55efc4;
+}
+
+.main .create .form-create input::-webkit-input-placeholder {
+  font-weight: bold;
+}
+
+.main .create .form-create input:-ms-input-placeholder {
+  font-weight: bold;
+}
+
+.main .create .form-create input::-ms-input-placeholder {
+  font-weight: bold;
+}
+
+.main .create .form-create input::placeholder {
+  font-weight: bold;
+}
+
+.main .create .form-create input::-webkit-input-placeholder, .main .create .form-create textarea::-webkit-input-placeholder {
+  color: #2d3436;
+}
+
+.main .create .form-create input:-ms-input-placeholder, .main .create .form-create textarea:-ms-input-placeholder {
+  color: #2d3436;
+}
+
+.main .create .form-create input::-ms-input-placeholder, .main .create .form-create textarea::-ms-input-placeholder {
+  color: #2d3436;
+}
+
+.main .create .form-create input::placeholder, .main .create .form-create textarea::placeholder {
+  color: #2d3436;
+}
+
+.main .create .form-create input:focus::-webkit-input-placeholder, .main .create .form-create textarea:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.main .create .form-create input:focus:-ms-input-placeholder, .main .create .form-create textarea:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+.main .create .form-create input:focus::-ms-input-placeholder, .main .create .form-create textarea:focus::-ms-input-placeholder {
+  color: transparent;
+}
+
+.main .create .form-create input:focus::placeholder, .main .create .form-create textarea:focus::placeholder {
+  color: transparent;
+}
+
+.main .create .form-create textarea {
+  width: 100%;
+  height: 75%;
+  resize: none;
+  border: none;
+  outline: none;
+  padding: 0;
+  padding-top: 0.5rem;
+  font-size: 0.7rem;
+  font-family: 'Montserrat Alternates', sans-serif;
+  caret-color: #55efc4;
+}
+
+.main .create .form-create_button-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 15%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.main .create .form-create_button-box-button {
+  width: 40px;
+  height: 40px;
+  background: white;
+  outline: none;
+  border: 1px solid #2d3436;
+  border-radius: 50%;
+}
+
+.main .create .form-create_button-box-button label {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.main .create .form-create_button-box-button:hover {
+  color: white !important;
+  cursor: pointer;
+  background: #d63031 !important;
+}
+
+.main .create .form-create_button-box-button:active {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.main .line {
+  position: relative;
+}
+
+.main .line .line-button-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 10%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.main .line .line-button-box_button {
+  width: 50%;
+  height: 100%;
+  font-size: 1.2rem;
+}
+
+.main .line .line-button-box_button:hover {
+  color: #d63031;
+  cursor: pointer;
+}
+
+.main .line .line-button-box .bt_active {
+  color: #d63031;
+}
+
+.main .line .line-panel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 5%;
+  background: #d63031;
+  color: white;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.main .line .line-panel span {
+  font-size: 0.5rem;
+}
+
+.main .line .line-panel .counter {
+  margin-left: 0.5rem;
+}
+
+.main .line .line-note-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 85%;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.main .line .line-note-box form {
+  width: 250px;
+  min-height: 60px;
+  margin: 1.5rem auto 0.5rem auto;
+}
+
+.main .line .line-note-box input[type="search"] {
+  width: 200px;
+  height: 40px;
+  padding: 0.5rem;
+  font-family: 'Montserrat Alternates';
+  border: none;
+  outline: none;
+  caret-color: #55efc4;
+}
+
+.main .line .line-note-box input[type="search"]:focus {
+  border: 1px solid #2d3436;
+  border-right: 0;
+}
+
+.main .line .line-note-box input[type="search"]:focus + button {
+  border: 1px solid #2d3436;
+}
+
+.main .line .line-note-box input[type="search"]:focus + button > svg {
+  fill: #d63031 !important;
+}
+
+.main .line .line-note-box input[type="search"]::-webkit-input-placeholder {
+  text-align: left;
+  color: #2d3436;
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.main .line .line-note-box input[type="search"]:-ms-input-placeholder {
+  text-align: left;
+  color: #2d3436;
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.main .line .line-note-box input[type="search"]::-ms-input-placeholder {
+  text-align: left;
+  color: #2d3436;
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.main .line .line-note-box input[type="search"]::placeholder {
+  text-align: left;
+  color: #2d3436;
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.main .line .line-note-box input[type="search"]:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.main .line .line-note-box input[type="search"]:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+.main .line .line-note-box input[type="search"]:focus::-ms-input-placeholder {
+  color: transparent;
+}
+
+.main .line .line-note-box input[type="search"]:focus::placeholder {
+  color: transparent;
+}
+
+.main .line .line-note-box input[type="search"]::-webkit-search-decoration,
+.main .line .line-note-box input[type="search"]::-webkit-search-cancel-button,
+.main .line .line-note-box input[type="search"]::-webkit-search-results-button,
+.main .line .line-note-box input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
+
+.main .line .line-note-box .search_bt {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: none;
+  outline: none;
+  background: white;
+}
+
+.main .line .line-note-box .search_bt svg {
+  width: 50%;
+  height: 50%;
+}
+
+.main .line .line-note-box .search_bt:hover {
+  cursor: pointer;
+}
+
+.main .line .line-note-box .search_bt:active svg {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.main .line .line-note-box_note {
+  width: 100%;
+  padding: 0.5rem;
+  margin: 1rem 0;
+  margin-bottom: 25%;
+  border-top: 1px solid #2d3436;
+  border-bottom: 1px solid #2d3436;
+}
+
+.main .line .line-note-box_note .title {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.main .line .line-note-box_note .text {
+  font-size: 0.8rem;
+}
+
+.main .line .line-note-box_note .user {
+  font-size: 1rem;
+  margin: 0.5rem;
+}
+
+.main .line .line-note-box_note .edit_bt {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #2d3436;
+  border-radius: 50%;
+  margin: 0.5rem;
+}
+
+.main .line .line-note-box_note svg {
+  width: 20px;
+  height: 20px;
+  fill: #2d3436;
+}
+
+.main .line .line-note-box_note .edit_bt:hover {
+  background: #d63031;
+  cursor: pointer;
+}
+
+.main .line .line-note-box_note .edit_bt:hover > svg {
+  fill: white;
+}
+
+.main .line .line-note-box_note .edit_bt:active {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.main .line .form_edit {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0.5rem;
+  width: 100%;
+  height: 100%;
+  background: white;
+}
+
+.main .line .form_edit textarea, .main .line .form_edit input {
+  border: none;
+  outline: none;
+  font-family: 'Montserrat Alternates';
+  caret-color: #55efc4;
+  padding: 0;
+  padding-top: 0.5rem;
+}
+
+.main .line .form_edit input[type=text] {
+  width: 100%;
+  height: 10%;
+  font-weight: bold;
+}
+
+.main .line .form_edit textarea {
+  width: 100%;
+  height: 75%;
+  resize: none;
+  font-size: 0.7rem;
+}
+
+.main .line .form_edit .form-button-box {
+  width: 100%;
+  height: 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .line .form_edit a, .main .line .form_edit button {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #2d3436;
+  background: transparent;
+  border-radius: 50%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  outline: none;
+  padding: 0;
+}
+
+.main .line .form_edit a svg {
+  width: 15px;
+  height: 15px;
+}
+
+.main .line .form_edit a:hover {
+  background: #d63031;
+  cursor: pointer;
+}
+
+.main .line .form_edit a:hover > svg {
+  fill: white;
+}
+
+.main .line .form_edit button:hover {
+  background: #d63031;
+  cursor: pointer;
+  color: white;
+}
+
+.main .line .form_edit a:active {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.main .line .form_edit button:active {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.main .acc {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.main .acc form {
+  width: 100%;
+  height: 50%;
+}
+
+.main .acc button {
+  width: 100px;
+  height: 25px;
+  font-size: 1rem;
+  font-family: 'Montserrat Alternates', sans-serif;
+  color: #2d3436;
+  background: white;
+  border: none;
+  outline: none;
+}
+
+.main .acc button:hover {
+  color: #d63031 !important;
+  cursor: pointer;
+}
+
+.main .acc button:active {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.main .acc .user-info {
+  width: 100%;
+  height: 50%;
+  padding: 1rem;
+}
+
+.main .acc .user-info h1 {
+  font-size: 1rem;
+}
+
+.main .acc .user_img {
+  width: 100px;
+  height: 100px;
+  background: url("https://sun9-9.userapi.com/impf/hACqVAJn84t7zL55GyveemfiIlopQfodKxmcag/EqlqzyBdYcM.jpg?size=1440x1080&quality=96&proxy=1&sign=385e0f4b01608679ba5da963c1d56dee&type=album"), center;
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.main .set {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  padding: 1rem;
+}
+
+.main .set .set-box {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 100%;
+  height: 25%;
+  padding: 0.5rem;
+  border-top: 1px solid #2d3436;
+}
+
+.main .set .toggle_switch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 30px;
+  height: 10px;
+  border-radius: 1rem;
+  background: #2d3436;
+}
+
+.main .set .toggle_switch input[type=checkbox] {
+  display: none;
+}
+
+.main .set .toggle_switch label {
+  width: 15px;
+  height: 15px;
+  background: #d63031;
+  border-radius: 50%;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform: translateX(-3%);
+      -ms-transform: translateX(-3%);
+          transform: translateX(-3%);
+}
+
+.main .set .toggle_switch label:hover {
+  -webkit-box-shadow: 0 0 0px 10px rgba(87, 239, 196, 0.8);
+          box-shadow: 0 0 0px 10px rgba(87, 239, 196, 0.8);
+  cursor: pointer;
+}
+
+.main .set .toggle_switch input[type=checkbox]:checked + label {
+  -webkit-transform: translateX(103%);
+      -ms-transform: translateX(103%);
+          transform: translateX(103%);
+}
+
+.main .ref {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.main .ref .text-box {
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  width: 100%;
+  border-bottom: 1px solid #2d3436;
+  padding: 1rem 0;
+}
+
+.main .ref .one {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .ref span {
+  margin: 0.5rem;
+}
+
+.main .ref span[class=vers] > span {
+  color: #55efc4;
+}
+
+.main .ref span[class=point] {
+  font-size: 0.8rem;
+  color: #d63031;
+}
+
+.main .dev {
+  overflow-y: auto;
+}
+
+.main .dev .dev-box {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 0.5rem;
+}
+
+.main .dev .dev-box .img {
+  width: 100px;
+  height: 100px;
+  border: 4px solid #2d3436;
+  border-radius: 50%;
+}
+
+.main .dev .dev-box #front {
+  background: url("https://sun9-9.userapi.com/impf/hACqVAJn84t7zL55GyveemfiIlopQfodKxmcag/EqlqzyBdYcM.jpg?size=1440x1080&quality=96&proxy=1&sign=385e0f4b01608679ba5da963c1d56dee&type=album");
+  background-size: cover;
+}
+
+.main .dev .dev-box #back {
+  background: url("https://avatars1.githubusercontent.com/u/63166211?s=460&u=aaf2c5639cf9f69e3e5dc942bdd3e0f9677cc508&v=4");
+  background-size: cover;
+}
+
+.main .dev .dev-box a {
+  text-decoration: none;
+  color: #d63031;
+}
+
+.footer {
+  width: 100%;
+  height: 5%;
+}
+
+.app {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  top: 15%;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background: white;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  z-index: 1;
+}
+
+.app span:hover {
+  color: #d63031;
+  cursor: pointer;
+}
+
+.app_active {
+  height: 85%;
+}
