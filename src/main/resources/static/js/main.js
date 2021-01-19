@@ -1,3 +1,7 @@
+$(document).ready(function() {
+    $('.line').show();
+    $('.app-span').hide();
+})
 //app
 $('.app-span').hide(); //close_app-span
 //open_app
@@ -122,13 +126,4 @@ $("#dark").change(function() {
     $('.ref').toggleClass('ref_dark', this.checked);
     $('.dev').toggleClass('dev_dark', this.checked);
     $('.app').toggleClass('app_dark', this.checked);
-})
-//form_edit
-$('.form_edit').hide();
-
-$('.edit_bt').click(function() {
-    $('.form_edit').show();
-})
-$('.edit_delete').click(function() {
-    $('.form_edit').hide();
 })
